@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pendulum</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="body">
+      <div class="scene">
+         <div class="innerscene">
+            <div class="static"></div>
+            <div class="string" id="string">
+               <div class="bob"></div>
+            </div>
+         </div>
+      </div>
+      <div class="controllers">
+         <div class="range-outer">
+            <div class="range-inner">
+               <div class="beforerange">Gravity</div>
+               <input type="range" name="range" id="gravity" class="slider" min="0" max="200">
+               <div class="gravity value">10.0</div>
+            </div>
+         </div>
+         <div class="range-outer">
+            <div class="range-inner">
+               <div class="beforerange">Length</div>
+               <input type="range" name="range" id="length" class="slider" min="0" max="200">
+               <div class="length value">1.00</div>
+            </div>
+         </div>
+         <div class="range-outer">
+            <div class="range-inner">
+               <div class="beforerange">Mass</div>
+               <input type="range" name="range" id="mass" class="slider" min="0" max="500">
+               <div class="mass value">2.50</div>
+            </div>
+         </div>
+         <div class="si">Everything in SI units
+         </div>
+      </div>
+   </div>
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --black: black;
+  --white: rgb(247, 233, 205);
+}
+body {
+  overflow: hidden;
+}
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+.scene {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: grid;
+  place-items: center;
+}
+.innerscene {
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+.static {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 10%;
+  min-width: 30px;
+  height: 5px;
+  background-color: var(--black);
+}
+.string {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  height: 120px;
+  width: 2px;
+  background-color: var(--black);
+  transform-origin: top;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.bob {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  transform: translate(-11px, 22px);
+  pointer-events: none;
+}
+
+.controllers{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.range-outer {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.range-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+}
+.beforerange {
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-right: 15px;
+  height: 30px;
+  color: var(--black);
+  background-color: var(--white);
+  min-width: 62px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.slider {
+  -webkit-appearance: none;
+  height: 2px;
+  width: 90%;
+  outline: none;
+  background-color: var(--black);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+}
+.value {
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 15px;
+  min-width: 35px;
+  height: 30px;
+  color: var(--black);
+  background-color: var(--white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.si{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 20px;
+}
